@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "League Spartan", sans-serif;
+  font-size: 10px;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-image: url("/images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.main-section {
+  width: 90%;
+  max-width: 50rem;
+  margin: 2rem auto;
+  /*********/
+}
+@media (min-width: 1024px) {
+  .main-section {
+    max-width: 70%;
+    margin-top: 5rem;
+  }
+}
+.main-section .review-products {
+  margin: 5rem auto 2rem;
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .main-section .review-products {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.main-section .review-products .products {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .main-section .review-products .products {
+    width: 60%;
+    max-width: 50rem;
+  }
+}
+.main-section .review-products .products .products-header {
+  text-align: center;
+  font-size: clamp(3rem, 7vw, 5rem);
+  font-weight: bold;
+  color: hsl(300deg, 43%, 22%);
+}
+@media (min-width: 1024px) {
+  .main-section .review-products .products .products-header {
+    text-align: left;
+  }
+}
+.main-section .review-products .products .products-paragraph {
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  line-height: 2rem;
+  font-size: 1.5rem;
+  color: hsl(303deg, 10%, 53%);
+  line-height: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .main-section .review-products .products .products-paragraph {
+    font-size: clamp(1.5rem, 7vw, 2.5rem);
+    text-align: left;
+    line-height: 3rem;
+  }
+}
+.main-section .review-products .reviews {
+  width: 100%;
+}
+@media (min-width: 1024px) {
+  .main-section .review-products .reviews {
+    width: 60%;
+  }
+}
+.main-section .review-products .reviews .report-reviews,
+.main-section .review-products .reviews .report-guru,
+.main-section .review-products .reviews .best-tech {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background: hsl(300deg, 24%, 96%);
+  border-radius: 1rem;
+  margin: 1rem;
+  padding: 2rem 0;
+}
+@media (min-width: 1024px) {
+  .main-section .review-products .reviews .report-reviews,
+.main-section .review-products .reviews .report-guru,
+.main-section .review-products .reviews .best-tech {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 40rem;
+    flex-direction: row;
+  }
+  .main-section .review-products .reviews .report-reviews:first-child,
+.main-section .review-products .reviews .report-guru:first-child,
+.main-section .review-products .reviews .best-tech:first-child {
+    margin: 0 auto 0 0;
+  }
+  .main-section .review-products .reviews .report-reviews:nth-child(2),
+.main-section .review-products .reviews .report-guru:nth-child(2),
+.main-section .review-products .reviews .best-tech:nth-child(2) {
+    margin: 1rem auto 0 7rem;
+  }
+  .main-section .review-products .reviews .report-reviews:last-child,
+.main-section .review-products .reviews .report-guru:last-child,
+.main-section .review-products .reviews .best-tech:last-child {
+    margin: 1rem auto 0 12rem;
+  }
+}
+.main-section .review-products .reviews .report-reviews .stars-container,
+.main-section .review-products .reviews .report-guru .stars-container,
+.main-section .review-products .reviews .best-tech .stars-container {
+  margin: -1rem 0 1rem;
+}
+@media (min-width: 1024px) {
+  .main-section .review-products .reviews .report-reviews .stars-container,
+.main-section .review-products .reviews .report-guru .stars-container,
+.main-section .review-products .reviews .best-tech .stars-container {
+    margin: 0;
+  }
+}
+.main-section .review-products .reviews .report-reviews .stars-container .stars,
+.main-section .review-products .reviews .report-guru .stars-container .stars,
+.main-section .review-products .reviews .best-tech .stars-container .stars {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0.3rem;
+}
+.main-section .review-products .reviews .report-reviews .rated-in,
+.main-section .review-products .reviews .report-guru .rated-in,
+.main-section .review-products .reviews .best-tech .rated-in {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: hsl(300deg, 43%, 22%);
+}
+.main-section .testimonials-section {
+  width: 100%;
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  .main-section .testimonials-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+}
+.main-section .testimonials-section .testimonial {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  background-color: hsl(300deg, 43%, 22%);
+  border-radius: 1rem;
+  margin: 0 auto 2rem;
+}
+@media (min-width: 1024px) {
+  .main-section .testimonials-section .testimonial {
+    margin-right: 2rem;
+    height: 25rem;
+  }
+  .main-section .testimonials-section .testimonial:first-child {
+    margin-top: -2rem;
+  }
+  .main-section .testimonials-section .testimonial:last-child {
+    margin-top: 2rem;
+  }
+}
+.main-section .testimonials-section .testimonial .buyer {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 4rem auto 2rem;
+}
+.main-section .testimonials-section .testimonial .buyer .portret {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  margin: 0 2rem 0 0;
+}
+.main-section .testimonials-section .testimonial .buyer .status .name {
+  color: hsl(0deg, 0%, 100%);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.main-section .testimonials-section .testimonial .buyer .status .verified-buyer {
+  color: hsl(333deg, 80%, 67%);
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.main-section .testimonials-section .testimonial .testimonial-paragraph {
+  width: 80%;
+  margin: 0 auto 3rem;
+  font-size: 2rem;
+  line-height: 2.2rem;
+  color: hsl(0deg, 0%, 100%);
+}
+
+.attribution {
+  width: 90%;
+  font-size: 1.5rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.attribution a {
+  cursor: pointer;
+  color: darkblue;
+}/*# sourceMappingURL=main.css.map */
